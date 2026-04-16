@@ -1,0 +1,12 @@
+FUNCTION fibonacci(n)
+    IF n < 0 THEN
+        RAISE ERROR "Negative numbers not allowed"
+    END IF
+    IF n == 0 THEN          // Base case
+        RETURN 0
+    ELSE IF n == 1 THEN     // Base case
+        RETURN 1
+    ELSE                    // Recursive case
+        RETURN fibonacci(n - 1) + fibonacci(n - 2)
+    END IF
+END FUNCTION

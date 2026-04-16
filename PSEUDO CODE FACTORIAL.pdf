@@ -1,0 +1,10 @@
+FUNCTION factorial(n)
+    IF n < 0 THEN
+        RAISE ERROR "Negative numbers not allowed"
+    END IF
+    IF n == 0 THEN          // Base case
+        RETURN 1
+    ELSE                    // Recursive case
+        RETURN n * factorial(n - 1)
+    END IF
+END FUNCTION
